@@ -55,7 +55,21 @@
     }
   ],
   "references": [],
-  "projects": [],
+  "projects": [
+    {
+      "name": "개인 프로필 웹사이트 제작",
+      "description": "Hugo와 GitHub Pages를 활용한 개인 소개 웹사이트",
+      "highlights": [
+        "프로필 정보와 이미지를 직접 수정함",
+        "About 페이지와 활동 기록을 작성함",
+        "GitHub Actions를 이용해 사이트를 배포함"
+      ],
+      "keywords": ["Hugo", "Git", "GitHub Pages", "JSON"],
+      "startDate": "2026-11-05",
+      "roles": ["개인 제작자"],
+      "type": "website"
+    }
+  ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
