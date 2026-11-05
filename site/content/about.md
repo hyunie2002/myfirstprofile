@@ -3,24 +3,62 @@ title: "About"
 draft: false
 ---
 
-## Attributions
+## 나에 대하여
 
-This theme depends on the following projects:
+저는 전북대학교 컴퓨터공학과에서 공부하고 있는 이창현입니다.
 
-- [Powered by Hugo](https://gohugo.io/)
-- Color scheme based on [Gruvbox](https://github.com/morhetz/gruvbox)
-- Code Highlighting by [Prism](https://prismjs.com/)
-- [Tabler Icons](https://tablericons.com/)
-- [Simple Icons](https://simpleicons.org/)
-- Content with the [#hugo-basic-example](/tags/hugo-basic-example) tag
-  originates from [gohugoio/hugoBasicExample](https://github.com/gohugoio/hugoBasicExample)
+정치외교학을 공부한 뒤 컴퓨터공학으로 전공을 변경했으며, 현재는 웹 개발과 사이버보안에 관심을 가지고 공부하고 있습니다.
 
-A big thanks to the creators! ❤️
+## 사이트 제작 목적
 
-The [profile picture of Richard Hendricks is from the Fandom Silicon Valley Wiki](https://silicon-valley.fandom.com/wiki/Richard_Hendricks?file=Richard_Hendricks.jpg).
+이 사이트는 저의 학업, 관심 분야, 학습 과정과 프로젝트 활동을 정리하기 위해 제작했습니다.
 
-## Legal
+Hugo 테마를 활용해 개인 소개 사이트를 만들고 GitHub Pages로 배포하는 과정을 직접 수행했습니다.
 
-The theme is [licensed under MIT](https://github.com/schnerring/hugo-theme-gruvbox/blob/main/LICENSE).
+## 선택한 테마
 
-All trademarks are the property of their respective owners.
+- 테마명: Hugo Gruvbox
+- 원본 저장소: <https://github.com/schnerring/hugo-theme-gruvbox>
+- 사용 위치: 사이트 전체 레이아웃과 색상 디자인
+- 이용 조건: MIT License
+
+## 이미지 출처
+
+- 사용 위치: 프로필 이미지
+- 파일: `static/dog_ENFJ.png`
+- 제작 구분: 외부 자료
+- 원본 페이지: <https://interactive.hankookilbo.com/v/anilog_mbti/result/ENFJ/>
+- 저작권 고지: Copyright © Hankookilbo
+- 이용 내용: 과제용 비상업 사이트에 사용하고 원본 출처를 표시했습니다.
+
+## 글과 콘텐츠
+
+사이트의 자기소개, 학습 목표와 활동 내용은 본인이 직접 작성했습니다.
+
+## 코드와 설정
+
+Hugo Gruvbox 테마의 기본 구조를 바탕으로 다음 내용을 직접 수정했습니다.
+
+- 프로필 정보
+- 프로필 이미지
+- 교육 정보와 기술 정보
+- GitHub 프로필 링크
+- 사이트 콘텐츠
+
+원본 테마의 구조를 참고했으며, 최종 내용과 설정은 개인 사이트에 맞게 수정했습니다.
+
+## AI 활용
+
+ChatGPT Classic과 Codex를 활용해 다음 작업을 도움받았습니다.
+
+- Hugo 파일 구조와 설정 확인
+- JSON 문법 확인
+- Git commit과 push 방법 확인
+- 과제 평가 기준과 검증 방법 정리
+
+최종 수정 내용은 본인이 판단하고 직접 확인했습니다.
+
+## 사이트와 저장소
+
+- 사이트: <https://hyunie2002.github.io/myfirstprofile/>
+- 저장소: <https://github.com/hyunie2002/myfirstprofile>
