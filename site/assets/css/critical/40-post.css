@@ -4,6 +4,14 @@
   padding: 2rem 0;
 }
 
+.content-section {
+  padding-bottom: 0.5rem;
+
+  & + .post {
+    padding-top: 0.5rem;
+  }
+}
+
 .post {
   & figure,
   & img:not(figure img),
