@@ -1,4 +1,4 @@
-{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+{{- $pages := .Site.RegularPages -}}
 {{- $searchIndex := slice -}}
 {{- range $index, $element := $pages -}}
   {{- $searchIndex = $searchIndex | append 
