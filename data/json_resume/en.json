@@ -1,14 +1,15 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Richard Hendricks",
-    "label": "Programmer",
-    "image": "https://hugo-theme-gruvbox.schnerring.net/richard-hendricks.webp",
-    "email": "richard.hendricks@piedpiper.com",
-    "phone": "(912) 555-4321",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory.",
+    "name": "CHANGHYUN LEE",
+    "label": "CS student",
+    "image": "https://interactive.hankookilbo.com/v/anilog_mbti/assets/img/dog_ENFJ.png",
+    "email": "ckdgus5856@gmail.com",
+    "phone": "(+82)10-5451-3384",
+    "summary": "Changhyun Lee hails from South Korea. He is currently studying Computer Science at Jeonbuk National University (JBNU). Before pursuing Computer Science, he studied Political Science and Diplomacy before deciding to change his major. He served in the Republic of Korea Army's 1st Corps from December 29, 2022, to June 28, 2024. He is now focused on his academic studies, with a particular interest in cybersecurity.",
+ 
     "location": {
-      "city": "San Francisco"
+      "city": "Jeonju"
     },
     "profiles": [
       {
