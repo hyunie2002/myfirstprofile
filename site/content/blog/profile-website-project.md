@@ -33,6 +33,10 @@ I selected the Hugo Gruvbox theme and replaced its example information with
 my own. I used GitHub Pages and GitHub Actions to apply the changes to the
 deployed website.
 
+I chose the Hugo Gruvbox theme because its responsive layout, search function,
+CV structure, and dark/light mode provided a useful base for focusing on my
+own content and deployment.
+
 ## Results
 
 I completed a personal profile website and verified the result at its GitHub
