@@ -1,5 +1,5 @@
 {{ range $pageIndex, $page := .Pages }}
-  <article class="post{{ if .Params.hideTitleInList }} post--title-hidden{{ end }}">
+  <article class="post{{ if .Params.hideTitleInList }} post--title-hidden{{ end }}{{ if eq .Section "blog" }} blog-post{{ end }}">
     {{ if not .Params.hideTitleInList }}
       <div class="post-header">
         <h2>
