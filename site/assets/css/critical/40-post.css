@@ -9,7 +9,11 @@
   padding-bottom: 0;
 
   & + .post {
-    padding-top: 1.3rem;
+    padding-top: 0;
+
+    & .post-header h2 {
+      margin-top: 1.3rem;
+    }
   }
 }
 
