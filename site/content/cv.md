@@ -4,10 +4,6 @@ draft: false
 type: "cv"
 ---
 
-## Experience
-
-{{< json-resume "work" >}}
-
 ## Education
 
 {{< json-resume "education" >}}
