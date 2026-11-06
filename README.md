@@ -1,4 +1,87 @@
-# Gruvbox Hugo Theme
+# Changhyun Lee - Hugo Profile Website
+
+이 저장소는 이창현의 개인 프로필 웹사이트 과제 결과물입니다.
+Hugo Gruvbox 테마를 바탕으로 프로필, About, CV, Blog 내용을 수정하고
+GitHub Pages로 배포했습니다.
+
+## 사이트와 저장소
+
+- 사이트: <https://hyunie2002.github.io/myfirstprofile/>
+- 저장소: <https://github.com/hyunie2002/myfirstprofile>
+
+## 빌드 환경
+
+- Hugo Extended 0.154.5
+- Dart Sass 1.105.0
+- Python 3.12
+- Node.js 24
+- Go 1.27.1
+
+GitHub Actions는 `.github/workflows/hugo-pages.yml`에서 위 환경을
+준비한 뒤 다음 스크립트를 실행합니다.
+
+```powershell
+python .github/pages_build.py --dependencies
+python .github/pages_build.py --build
+```
+
+첫 번째 명령은 `site/package-lock.json`을 기준으로 npm 의존성을 설치하고,
+필요한 PostCSS·Tailwind·Pagefind 도구를 준비합니다. 두 번째 명령은
+`site/pages.json`과 운영 baseURL을 사용해 `public/`을 생성합니다.
+
+## 로컬 실행
+
+로컬에서 실행하려면 Hugo Extended와 Node.js를 설치한 뒤 저장소 루트에서
+다음 명령을 사용합니다.
+
+```powershell
+cd site
+npm ci
+hugo server --config pages.json
+```
+
+로컬 미리보기 주소는 보통 <http://localhost:1313/>입니다.
+실제 제출 배포는 로컬 `public/` 폴더가 아니라 GitHub Actions가 생성한
+Pages artifact를 사용합니다.
+
+## 수정할 파일
+
+- `site/data/json_resume/en.json`: 프로필·학력·기술 정보
+- `site/content/about.md`: About 페이지 소개와 Focus 내용
+- `site/content/blog/profile-website-project.md`: 활동 Blog 글
+- `site/static/dog_ENFJ.png`: 프로필 이미지
+- `site/config/production/hugo.toml`: 운영 baseURL
+- `.github/workflows/hugo-pages.yml`: GitHub Pages 배포 절차
+- `.github/pages_build.py`: 의존성 준비와 빌드 스크립트
+
+## 수정 후 커밋과 재배포
+
+파일을 수정한 뒤 저장소 루트에서 다음 명령을 실행합니다.
+
+```powershell
+git status
+git add .
+git commit -m "Describe the change"
+git push origin main
+```
+
+`main`에 push하면 GitHub Actions의 `Deploy Hugo to GitHub Pages`
+워크플로가 자동으로 실행됩니다. 다음 순서로 결과를 확인합니다.
+
+1. GitHub 저장소의 **Actions** 메뉴를 엽니다.
+2. 해당 커밋의 `build`와 `deploy` 단계가 성공했는지 확인합니다.
+3. <https://hyunie2002.github.io/myfirstprofile/>를 엽니다.
+4. 수정한 페이지와 내부 링크가 공개 화면에 반영되었는지 확인합니다.
+
+## 출처와 이용 조건
+
+사용한 테마의 원본 저장소와 외부 이미지 출처는 사이트의 About 페이지에
+기록했습니다. 프로필 이미지와 원본 출처, 테마의 MIT License 고지를
+확인할 수 있습니다.
+
+---
+
+## Original Hugo Gruvbox Theme Documentation
 
 A retro-looking [Hugo](https://gohugo.io/) theme inspired by
 [gruvbox](https://github.com/morhetz/gruvbox) to build secure, fast, and
