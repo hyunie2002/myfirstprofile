@@ -26,6 +26,10 @@
   }
 }
 
+.post--title-hidden .post-content {
+  margin-top: 0;
+}
+
 .post-header,
 .post-content__read-more {
   font-family: var(--font-monospace);

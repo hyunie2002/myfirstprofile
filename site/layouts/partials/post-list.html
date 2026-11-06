@@ -1,11 +1,13 @@
 {{ range $pageIndex, $page := .Pages }}
-  <article class="post">
-    <div class="post-header">
-      <h2>
-        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-      </h2>
-      {{ partial "post-meta.html" (dict "page" . "pageIndex" $pageIndex) }}
-    </div>
+  <article class="post{{ if .Params.hideTitleInList }} post--title-hidden{{ end }}">
+    {{ if not .Params.hideTitleInList }}
+      <div class="post-header">
+        <h2>
+          <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        </h2>
+        {{ partial "post-meta.html" (dict "page" . "pageIndex" $pageIndex) }}
+      </div>
+    {{ end }}
 
     <div class="post-content">
       {{ with .Description }}

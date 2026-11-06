@@ -1,6 +1,7 @@
 ---
 title: "개인 프로필 웹사이트 제작 활동"
 draft: false
+hideTitleInList: true
 ---
 
 ## 활동 분야와 적용 사례
