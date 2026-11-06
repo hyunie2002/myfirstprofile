@@ -52,6 +52,27 @@
     {
       "name": "Football",
       "keywords": ["EPL", "LALIGA"]
+    },
+    {
+      "name": "Travel",
+      "keywords": [
+        "Japan",
+        "China",
+        "Philippines",
+        "Cambodia",
+        "India",
+        "Türkiye",
+        "Georgia",
+        "Armenia",
+        "France",
+        "Germany",
+        "Belgium",
+        "Finland",
+        "Sweden",
+        "Denmark",
+        "Luxembourg",
+        "Netherlands"
+      ]
     }
   ],
   "references": [],

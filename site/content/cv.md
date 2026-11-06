@@ -12,10 +12,6 @@ type: "cv"
 
 {{< json-resume "education" >}}
 
-## Certificates
-
-{{< json-resume "certificates" >}}
-
 ## Skills
 
 {{< json-resume "skills" >}}
