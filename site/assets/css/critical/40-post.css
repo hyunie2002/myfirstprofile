@@ -84,6 +84,10 @@
   display: none !important;
 }
 
+.about-post .post-heading__anchor {
+  display: none !important;
+}
+
 h1:hover,
 h2:hover,
 h3:hover,
