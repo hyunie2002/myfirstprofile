@@ -10,16 +10,7 @@
     {{ end }}
 
     <div class="post-content">
-      {{ with .Description }}
-        {{ . }}
-      {{ else }}
-        {{ .Summary }}
-        {{ if .Truncated }}
-          <div class="post-content__read-more">
-            <a href="{{ .RelPermalink }}">Read more &gt;</a>
-          </div>
-        {{ end }}
-      {{ end }}
+      {{ .Content }}
     </div>
   </article>
 {{ end }}
