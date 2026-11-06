@@ -5,76 +5,85 @@ draft: false
 
 ## Me
 
-저는 전북대학교 컴퓨터공학과에서 공부하고 있는 이창현입니다.
+My name is Changhyun Lee, and I am studying Computer Science at Jeonbuk
+National University.
 
-정치외교학을 공부한 뒤 컴퓨터공학으로 전공을 변경했으며, 현재는 웹 개발과 사이버보안에 관심을 가지고 공부하고 있습니다.
+I previously studied Political Science and Diplomacy before changing my major
+to Computer Science. I am currently studying web development and
+cybersecurity.
 
 ## Focus
 
-저는 웹개발과 사이버보안에 관심이 있습니다.
+I am interested in web development and cybersecurity.
 
-웹 개발 기초와 함께 HTML, CSS, JSON, Hugo, Git, GitHub와 GitHub Actions를
-공부하고 있습니다.
+Along with the basics of web development, I am studying HTML, CSS, JSON, Hugo,
+Git, GitHub, and GitHub Actions.
 
-관심을 가지게 된 계기는 향후 AI기술이 발달함에 따라 웹개발에 대한 지식은
-AI활용에 있어서 많은 효율성을 제공할수 있을거라 생각했고, 다루는 정보량이
-많아짐에 따라 사이버보안의 중요도 역시 비전이 있는 분야라고 생각하여
-관심을 가지게 되었습니다.
+I became interested in these fields because I believe that knowledge of web
+development will help me use AI more effectively as AI technology advances.
+As the amount of information we handle continues to grow, I also believe that
+cybersecurity will become increasingly important and promising.
 
 ## Purpose
 
-이 사이트는 저의 학업, 관심 분야, 학습 과정과 프로젝트 활동을 정리하기 위해 제작했습니다.
+I created this site to organize my academic background, interests, learning
+process, and project activities.
 
-Hugo 테마를 활용해 개인 소개 사이트를 만들고 GitHub Pages로 배포하는 과정을 직접 수행했습니다.
+I built a personal profile site using a Hugo theme and personally completed
+the deployment process with GitHub Pages.
 
-향후 학습목표는 AI를 통해 저만의 웹사이트 또는 실생활에서 사용할 수 있는 프로그램을 개발해보는 것입니다.
-이를 위해서, 초급프로젝트에서 진행하고 있는 나만의 포트폴리오 작성을 통해서 기초적인 웹사이트를 성공적으로 만들어보고 싶습니다.
-그리고 더 나아가 인프런 같은 자기계발 사이트를 통해서 보안, 그리고 웹개발과 관련된 지식을 공부할 계획입니다.
+My future learning goal is to use AI to develop my own website or a program
+that can be used in everyday life. Through this beginner project and the
+creation of my own portfolio, I want to successfully build a basic website.
+In the future, I also plan to study security and web development through
+learning platforms such as Inflearn.
 
 ## Theme
 
-- 테마명: Hugo Gruvbox
-- 원본 저장소: <https://github.com/schnerring/hugo-theme-gruvbox>
-- 사용 위치: 사이트 전체 레이아웃과 색상 디자인
-- 이용 조건: MIT License
+- Theme: Hugo Gruvbox
+- Original repository: <https://github.com/schnerring/hugo-theme-gruvbox>
+- Usage: The site's overall layout and color design
+- License: MIT License
 
 ## Image
 
-- 사용 위치: 프로필 이미지
-- 파일: `static/dog_ENFJ.png`
-- 제작 구분: 외부 자료
-- 원본 페이지: <https://interactive.hankookilbo.com/v/anilog_mbti/result/ENFJ/>
-- 저작권 고지: Copyright © Hankookilbo
-- 이용 내용: 과제용 비상업 사이트에 사용하고 원본 출처를 표시했습니다.
+- Usage: Profile image
+- File: `static/dog_ENFJ.png`
+- Source type: External material
+- Original page: <https://interactive.hankookilbo.com/v/anilog_mbti/result/ENFJ/>
+- Copyright notice: Copyright © Hankookilbo
+- Usage details: Used on this non-commercial assignment site with attribution.
 
-## content
+## Content
 
-사이트의 자기소개, 학습 목표와 활동 내용은 본인이 직접 작성했습니다.
+I wrote the site's introduction, learning goals, and activity content myself.
 
 ## Code
 
-Hugo Gruvbox 테마의 기본 구조를 바탕으로 다음 내용을 직접 수정했습니다.
+Based on the basic structure of the Hugo Gruvbox theme, I personally modified
+the following:
 
-- 프로필 정보
-- 프로필 이미지
-- 교육 정보와 기술 정보
-- GitHub 프로필 링크
-- 사이트 콘텐츠
+- Profile information
+- Profile image
+- Education and skills information
+- GitHub profile link
+- Site content
 
-원본 테마의 구조를 참고했으며, 최종 내용과 설정은 개인 사이트에 맞게 수정했습니다.
+I referred to the original theme structure and customized the final content
+and settings for my personal site.
 
 ## AI
 
-ChatGPT Classic과 Codex를 활용해 다음 작업을 도움받았습니다.
+I used ChatGPT Classic and Codex for assistance with the following tasks:
 
-- Hugo 파일 구조와 설정 확인
-- JSON 문법 확인
-- Git commit과 push 방법 확인
-- 과제 평가 기준과 검증 방법 정리
+- Checking the Hugo file structure and configuration
+- Checking JSON syntax
+- Learning how to commit and push with Git
+- Organizing the assignment criteria and verification methods
 
-최종 수정 내용은 본인이 판단하고 직접 확인했습니다.
+I made the final decisions about the changes and checked the results myself.
 
-## Github
+## GitHub
 
-- 사이트: <https://hyunie2002.github.io/myfirstprofile/>
-- 저장소: <https://github.com/hyunie2002/myfirstprofile>
+- Site: <https://hyunie2002.github.io/myfirstprofile/>
+- Repository: <https://github.com/hyunie2002/myfirstprofile>
