@@ -17,6 +17,52 @@
   }
 }
 
+.post-section-accordion {
+  border-bottom: 1px solid var(--bg1);
+  margin: 1.3rem 0;
+}
+
+.post-section-accordion > summary {
+  border-bottom: 1px solid var(--bg1);
+  color: var(--fg0);
+  cursor: pointer;
+  font-family: var(--font-monospace);
+  font-size: 1.75rem;
+  line-height: 1.4;
+  list-style: none;
+  padding: 0.25rem 0;
+}
+
+.post-section-accordion > summary::-webkit-details-marker {
+  display: none;
+}
+
+.post-section-accordion > summary::before {
+  color: var(--primary-alt);
+  content: "> ";
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.post-section-accordion[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.post-section-accordion__heading {
+  border-bottom: none;
+}
+
+.post-section-accordion > summary:focus-visible {
+  outline: 2px solid var(--yellow1);
+  outline-offset: 3px;
+}
+
+@media (--md) {
+  .post-section-accordion > summary {
+    font-size: 2rem;
+  }
+}
+
 .post {
   & figure,
   & img:not(figure img),
