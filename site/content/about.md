@@ -38,6 +38,15 @@ creation of my own portfolio, I want to successfully build a basic website.
 In the future, I also plan to study security and web development through
 learning platforms such as Inflearn.
 
+## Learning Goal and Next Action
+
+My next learning goal is to improve the responsive design and keyboard
+accessibility of this website.
+
+As my next action, I will test the navigation and content at 390px, 768px,
+and 1440px, fix any layout or keyboard-accessibility issues, and verify the
+changes again after deployment.
+
 ## Theme
 
 - Theme: Hugo Gruvbox
