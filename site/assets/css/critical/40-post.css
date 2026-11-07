@@ -61,6 +61,10 @@
   transform: translateX(0.2rem) scale(1.15) rotate(0deg);
 }
 
+.blog-post .post-section-accordion > summary::before {
+  margin-right: 0.4rem;
+}
+
 .blog-post .post-section-accordion:not([open]) > summary:hover::before,
 .cv-post .post-section-accordion:not([open]) > summary:hover::before {
   color: var(--primary);
