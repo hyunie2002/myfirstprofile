@@ -17,9 +17,11 @@
   }
 }
 
+/*! purgecss start ignore */
+
 .post-section-accordion {
-  border-bottom: 1px solid var(--bg1);
-  margin: 1.3rem 0;
+  border: none;
+  margin: 0;
 }
 
 .post-section-accordion > summary {
@@ -27,10 +29,12 @@
   color: var(--fg0);
   cursor: pointer;
   font-family: var(--font-monospace);
-  font-size: 1.65rem;
+  font-size: 1.75rem;
+  font-weight: 400;
   line-height: 1.4;
   list-style: none;
-  padding: 0.25rem 0;
+  margin: 0.83em 0;
+  padding: 0;
 }
 
 .post-section-accordion > summary::-webkit-details-marker {
@@ -59,9 +63,11 @@
 
 @media (--md) {
   .post-section-accordion > summary {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 }
+
+/*! purgecss end ignore */
 
 .post {
   & figure,
