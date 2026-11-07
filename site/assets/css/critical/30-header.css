@@ -333,23 +333,6 @@ nav#menu {
           transform: none;
           visibility: visible;
         }
-
-        & ~ svg {
-          stroke: var(--bg1);
-
-          & line:nth-of-type(1) {
-            transform: translate(0, 6px) rotate(45deg);
-          }
-
-          & line:nth-of-type(2) {
-            opacity: 0;
-            transform: scale(0.2);
-          }
-
-          & line:nth-of-type(3) {
-            transform: translate(0, -6px) rotate(-45deg);
-          }
-        }
       }
     }
 

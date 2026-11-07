@@ -14,7 +14,8 @@
 
 {{ $prism := resources.Get "js/prism.js" | resources.ExecuteAsTemplate "js/prism.js" . }}
 {{ $accordion := resources.Get "js/accordion.js" | resources.ExecuteAsTemplate "js/accordion.js" . }}
-{{ $bundle := slice $prism $accordion | resources.Concat "js/main.js" | js.Build $jsBuildOptions }}
+{{ $menu := resources.Get "js/menu.js" | resources.ExecuteAsTemplate "js/menu.js" . }}
+{{ $bundle := slice $prism $accordion $menu | resources.Concat "js/main.js" | js.Build $jsBuildOptions }}
 {{ $flexsearch := resources.Get "js/flexsearch.js" | resources.ExecuteAsTemplate "js/flexsearch.js" . | js.Build $jsBuildOptions }}
 
 {{ if hugo.IsProduction }}
