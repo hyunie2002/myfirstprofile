@@ -5,6 +5,14 @@
   {{ partial "head/resource-hints.html" . }}
   {{ partial "head/seo.html" . }}
 
+  {{ if eq .Site.Language.Lang "ko" }}
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css"
+    />
+  {{ end }}
+
 
   <!-- Extensibility -->
   {{ partial "head/head_start.html" . }}

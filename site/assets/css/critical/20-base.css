@@ -4,6 +4,18 @@
   --font-serif: "Roboto Slab", Georgia, serif;
 }
 
+html[lang="ko"] {
+  --font-monospace:
+    "Pretendard Variable", "Noto Sans KR", Pretendard, "Apple SD Gothic Neo",
+    "Malgun Gothic", "맑은 고딕", sans-serif;
+  --font-sans-serif:
+    "Pretendard Variable", "Noto Sans KR", Pretendard, "Apple SD Gothic Neo",
+    "Malgun Gothic", "맑은 고딕", sans-serif;
+  --font-serif:
+    "Pretendard Variable", "Noto Sans KR", Pretendard, "Apple SD Gothic Neo",
+    "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
 html {
   font-family: var(--font-serif);
   font-size: 1rem;
