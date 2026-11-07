@@ -1,0 +1,23 @@
+{{ if gt (len .AllTranslations) 1 }}
+  {{ $currentLang := .Lang }}
+  <div class="language-switcher" aria-label="Language switcher">
+    {{ range $index, $translation := .AllTranslations }}
+      {{ if gt $index 0 }}
+        <span class="language-switcher__separator" aria-hidden="true">/</span>
+      {{ end }}
+      <a
+        class="language-switcher__link{{ if eq $translation.Lang $currentLang }} language-switcher__link--active{{ end }}"
+        href="{{ $translation.RelPermalink }}"
+        lang="{{ $translation.Lang }}"
+        {{ if eq $translation.Lang $currentLang }}aria-current="page"{{ end }}
+      >
+        <span class="language-switcher__full">
+          {{ if eq $translation.Lang "ko" }}한국어{{ else }}English{{ end }}
+        </span>
+        <span class="language-switcher__short">
+          {{ if eq $translation.Lang "ko" }}KO{{ else }}EN{{ end }}
+        </span>
+      </a>
+    {{ end }}
+  </div>
+{{ end }}

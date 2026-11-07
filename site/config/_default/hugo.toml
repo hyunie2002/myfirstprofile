@@ -1,4 +1,6 @@
 baseURL = "http://localhost"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 copyright = "Copyright © 2026 Changhyun Lee"
 title = "Changhyun Lee"
 #paginate = 10
@@ -139,31 +141,47 @@ enableRobotsTXT = true
     iconName = "outline/mail"
     formatString = "mailto:?subject={title}&body={url}"
 
-[menu]
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog"
-    weight = 10
-  [[menu.main]]
-    identifier = "cv"
-    name = "CV"
-    url = "/cv"
-    weight = 20
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
-    weight = 30
-
 [languages]
   [languages.en]
     languageName = "English"
     weight = 10
     [languages.en.params.jsonResume]
       present = "present"
-  [languages.de]
-    languageName = "Deutsch"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog"
+        weight = 10
+      [[languages.en.menu.main]]
+        identifier = "cv"
+        name = "CV"
+        url = "/cv"
+        weight = 20
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+        weight = 30
+
+  [languages.ko]
+    languageName = "한국어"
     weight = 20
-    [languages.de.params.jsonResume]
-      present = "heute"
+    [languages.ko.params.jsonResume]
+      present = "현재"
+    [languages.ko.menu]
+      [[languages.ko.menu.main]]
+        identifier = "blog"
+        name = "블로그"
+        url = "/ko/blog"
+        weight = 10
+      [[languages.ko.menu.main]]
+        identifier = "cv"
+        name = "이력서"
+        url = "/ko/cv"
+        weight = 20
+      [[languages.ko.menu.main]]
+        identifier = "about"
+        name = "소개"
+        url = "/ko/about"
+        weight = 30

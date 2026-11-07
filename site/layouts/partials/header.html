@@ -25,6 +25,8 @@
   </div>
 
   <nav id="menu">
+    {{ partial "language-switcher.html" . }}
+
     <ul class="menu--horizontal">
       {{ range $.Site.Menus.main }}
         <li class="menu__item">

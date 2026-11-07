@@ -165,6 +165,50 @@ nav#menu {
   grid-area: nav;
   justify-content: flex-end;
 
+  & .language-switcher {
+    align-items: center;
+    display: flex;
+    gap: 0.35rem;
+    margin-right: 0.75rem;
+    white-space: nowrap;
+  }
+
+  & .language-switcher__link {
+    color: var(--fg);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--fg3);
+    }
+  }
+
+  & .language-switcher__link--active {
+    color: var(--yellow1);
+    font-weight: 700;
+  }
+
+  & .language-switcher__separator {
+    color: var(--fg3);
+  }
+
+  & .language-switcher__full {
+    display: none;
+  }
+
+  & .language-switcher__short {
+    display: inline;
+  }
+
+  @media (--md) {
+    & .language-switcher__full {
+      display: inline;
+    }
+
+    & .language-switcher__short {
+      display: none;
+    }
+  }
+
   & .menu__item {
     color: var(--fg);
 

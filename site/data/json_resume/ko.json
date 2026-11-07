@@ -1,0 +1,99 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "이창현",
+    "label": "컴퓨터공학과 학생",
+    "image": "/dog_ENFJ.png",
+    "email": "ckdgus5856@gmail.com",
+    "phone": "(+82)10-5451-3384",
+    "summary": "대한민국 출신의 이창현입니다. 전북대학교에서 컴퓨터공학을 공부하고 있습니다. 정치외교학을 공부한 뒤 전공을 컴퓨터공학으로 변경했으며, 현재는 웹 개발과 사이버보안에 관심을 가지고 공부하고 있습니다.",
+    "location": {
+      "city": "전주"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "hyunie2002",
+        "url": "https://github.com/hyunie2002"
+      }
+    ]
+  },
+  "work": [],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "전북대학교",
+      "url": "https://www.jbnu.ac.kr/web/index.do",
+      "area": "컴퓨터공학",
+      "studyType": "학사"
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Git과 GitHub",
+      "level": "초급",
+      "keywords": ["commit", "push", "GitHub Actions"]
+    },
+    {
+      "name": "웹 기초",
+      "level": "학습 중",
+      "keywords": ["HTML", "CSS", "JSON"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "한국어",
+      "fluency": "모국어"
+    }
+  ],
+  "interests": [
+    {
+      "name": "축구",
+      "keywords": ["EPL", "LALIGA"]
+    },
+    {
+      "name": "여행",
+      "keywords": [
+        "일본",
+        "중국",
+        "필리핀",
+        "캄보디아",
+        "인도",
+        "튀르키예",
+        "조지아",
+        "아르메니아",
+        "프랑스",
+        "독일",
+        "벨기에",
+        "핀란드",
+        "스웨덴",
+        "덴마크",
+        "룩셈부르크",
+        "네덜란드"
+      ]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "개인 프로필 웹사이트",
+      "description": "Hugo와 GitHub Pages로 제작한 개인 프로필 웹사이트",
+      "highlights": [
+        "프로필 정보와 프로필 이미지 수정",
+        "About 페이지와 활동 기록 작성",
+        "GitHub Actions를 사용한 사이트 배포"
+      ],
+      "keywords": ["Hugo", "Git", "GitHub Pages", "JSON"],
+      "startDate": "2026-11-05",
+      "roles": ["개발자"],
+      "type": "웹사이트"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
