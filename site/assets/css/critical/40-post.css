@@ -65,6 +65,10 @@
   margin-right: 0.4rem;
 }
 
+.cv-post .post-section-accordion > summary::before {
+  margin-right: 0.4rem;
+}
+
 .blog-post .post-section-accordion:not([open]) > summary:hover::before,
 .cv-post .post-section-accordion:not([open]) > summary:hover::before {
   color: var(--primary);
