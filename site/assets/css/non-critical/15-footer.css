@@ -2,10 +2,21 @@ footer {
   align-items: center;
   color: var(--fg3);
   display: flex;
+  flex-direction: column;
   font-family: var(--font-monospace);
   font-size: 0.8rem;
+  gap: 0.5rem;
   justify-content: center;
   padding-bottom: 0.5rem;
   padding-top: 2rem;
   text-align: center;
+}
+
+.footer-home {
+  color: var(--fg0);
+  font-weight: 700;
+}
+
+.footer-home:hover {
+  color: var(--primary);
 }
