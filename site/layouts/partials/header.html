@@ -25,7 +25,9 @@
   </div>
 
   <nav id="menu">
-    {{ partial "language-switcher.html" . }}
+    <div class="language-switcher--desktop">
+      {{ partial "language-switcher.html" . }}
+    </div>
 
     <ul class="menu--horizontal">
       {{ range $.Site.Menus.main }}
@@ -43,6 +45,26 @@
 
 
       <ul class="menu--vertical">
+        <li class="menu__mobile-controls">
+          {{ partial "language-switcher.html" . }}
+
+          <div class="menu__theme-toggles">
+            <button
+              class="theme__toggle light--hidden"
+              aria-label="Toggle light mode"
+            >
+              {{ partial "icons/tabler-icon.html" "outline/sun" }}
+            </button>
+
+            <button
+              class="theme__toggle dark--hidden"
+              aria-label="Toggle dark mode"
+            >
+              {{ partial "icons/tabler-icon.html" "outline/moon" }}
+            </button>
+          </div>
+        </li>
+
         {{ range $.Site.Menus.main }}
           <li>
             <a class="menu__item" href="{{ .URL }}">{{ .Name }}</a>
@@ -52,11 +74,17 @@
     </div>
   </nav>
 
-  <button class="theme__toggle light--hidden" aria-label="Toggle light mode">
+  <button
+    class="theme__toggle theme__toggle--desktop light--hidden"
+    aria-label="Toggle light mode"
+  >
     {{ partial "icons/tabler-icon.html" "outline/sun" }}
   </button>
 
-  <button class="theme__toggle dark--hidden" aria-label="Toggle dark mode">
+  <button
+    class="theme__toggle theme__toggle--desktop dark--hidden"
+    aria-label="Toggle dark mode"
+  >
     {{ partial "icons/tabler-icon.html" "outline/moon" }}
   </button>
 </header>

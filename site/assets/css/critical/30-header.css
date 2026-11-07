@@ -2,8 +2,8 @@ header {
   display: grid;
   font-family: var(--font-monospace);
   font-size: 1.25rem;
-  grid-template-columns: auto auto 1fr auto;
-  grid-template-areas: "heading search nav theme-toggle";
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "heading search nav";
   padding: 0.75rem;
 }
 
@@ -154,6 +154,10 @@ header {
   }
 }
 
+header > .theme__toggle--desktop {
+  display: none;
+}
+
 /* TODO: simplify deep nesting */
 nav#menu {
   align-items: center;
@@ -167,6 +171,10 @@ nav#menu {
     gap: 0.35rem;
     margin-right: 0.75rem;
     white-space: nowrap;
+  }
+
+  & .language-switcher--desktop {
+    display: none;
   }
 
   & .language-switcher__link {
@@ -253,6 +261,37 @@ nav#menu {
     position: relative;
     width: 28px;
 
+    & .menu__mobile-controls {
+      align-items: center;
+      border-bottom: 1px solid var(--bg2);
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.75rem;
+
+      & .language-switcher {
+        margin-right: 0;
+      }
+
+      & .language-switcher__link {
+        color: var(--bg1);
+      }
+
+      & .language-switcher__link--active {
+        color: var(--yellow1);
+      }
+
+      & .language-switcher__separator {
+        color: var(--bg3);
+      }
+    }
+
+    & .menu__theme-toggles {
+      display: flex;
+      gap: 0.5rem;
+    }
+
     & > * {
       position: absolute;
     }
@@ -317,5 +356,26 @@ nav#menu {
     @media (--md) {
       display: none;
     }
+  }
+
+  @media (--md) {
+    & .language-switcher--desktop {
+      display: block;
+    }
+
+    & .menu__mobile-controls {
+      display: none;
+    }
+  }
+}
+
+@media (--md) {
+  header {
+    grid-template-columns: auto auto 1fr auto;
+    grid-template-areas: "heading search nav theme-toggle";
+  }
+
+  header > .theme__toggle--desktop {
+    display: flex;
   }
 }
