@@ -12,8 +12,10 @@ main {
   align-items: start;
   display: grid;
   grid-area: main;
-  grid-template-areas: "empty content sidebar";
-  grid-template-columns: 1fr minmax(0, 650px) 4fr;
+  grid-template-areas:
+    "content"
+    "sidebar";
+  grid-template-columns: minmax(0, 1fr);
 }
 
 header {
@@ -35,14 +37,24 @@ footer {
 }
 
 .sidebar {
-  display: none;
+  display: flex;
   flex-direction: column;
   grid-area: sidebar;
-  margin-top: 3rem;
-  position: sticky;
-  top: 2rem;
+  margin-top: 2rem;
+  padding-left: 0;
+  position: static;
 
   @media (--lg) {
-    display: flex;
+    margin-top: 3rem;
+    padding-left: 2.5rem;
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+@media (--lg) {
+  main {
+    grid-template-areas: "empty content sidebar";
+    grid-template-columns: 1fr minmax(0, 650px) 4fr;
   }
 }
