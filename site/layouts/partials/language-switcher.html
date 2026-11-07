@@ -11,12 +11,7 @@
         lang="{{ $translation.Lang }}"
         {{ if eq $translation.Lang $currentLang }}aria-current="page"{{ end }}
       >
-        <span class="language-switcher__full">
-          {{ if eq $translation.Lang "ko" }}한국어{{ else }}English{{ end }}
-        </span>
-        <span class="language-switcher__short">
-          {{ if eq $translation.Lang "ko" }}KO{{ else }}EN{{ end }}
-        </span>
+        {{ if eq $translation.Lang "ko" }}KOR{{ else }}ENG{{ end }}
       </a>
     {{ end }}
   </div>

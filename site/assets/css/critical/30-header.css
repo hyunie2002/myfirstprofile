@@ -191,24 +191,6 @@ nav#menu {
     color: var(--fg3);
   }
 
-  & .language-switcher__full {
-    display: none;
-  }
-
-  & .language-switcher__short {
-    display: inline;
-  }
-
-  @media (--md) {
-    & .language-switcher__full {
-      display: inline;
-    }
-
-    & .language-switcher__short {
-      display: none;
-    }
-  }
-
   & .menu__item {
     color: var(--fg);
 
