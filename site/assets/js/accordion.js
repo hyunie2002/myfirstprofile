@@ -1,6 +1,8 @@
-function enableBlogAccordions() {
+function enablePostAccordions() {
   document
-    .querySelectorAll("article.blog-post .post-content")
+    .querySelectorAll(
+      "article.blog-post .post-content, article.cv-post .post-content",
+    )
     .forEach((content) => {
       const headings = Array.from(content.children).filter(
         (element) => element.tagName === "H2",
@@ -42,7 +44,7 @@ function enableBlogAccordions() {
 }
 
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", enableBlogAccordions);
+  document.addEventListener("DOMContentLoaded", enablePostAccordions);
 } else {
-  enableBlogAccordions();
+  enablePostAccordions();
 }
