@@ -7,7 +7,7 @@
       {{ end }}
       <a
         class="language-switcher__link{{ if eq $translation.Lang $currentLang }} language-switcher__link--active{{ end }}"
-        href="{{ $translation.RelPermalink }}"
+        href="{{ $translation.Permalink }}"
         lang="{{ $translation.Lang }}"
         {{ if eq $translation.Lang $currentLang }}aria-current="page"{{ end }}
       >
