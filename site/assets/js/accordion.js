@@ -1,7 +1,7 @@
 function enablePostAccordions() {
   document
     .querySelectorAll(
-      "article.blog-post .post-content, article.cv-post .post-content",
+      "article.blog-post .post-content, article.cv-post .post-content, article.about-post .post-content",
     )
     .forEach((content) => {
       const headings = Array.from(content.children).filter(
