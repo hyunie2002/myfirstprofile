@@ -61,8 +61,21 @@
   outline-offset: 3px;
 }
 
+.cv-post .post-section-accordion > summary {
+  font-family: var(--font-monospace);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0.83em 0;
+  padding: 0;
+}
+
 @media (--md) {
   .post-section-accordion > summary {
+    font-size: 2rem;
+  }
+
+  .cv-post .post-section-accordion > summary {
     font-size: 2rem;
   }
 }
