@@ -1,7 +1,7 @@
 header {
   display: grid;
   font-family: var(--font-monospace);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   grid-template-columns: auto auto 1fr auto;
   grid-template-areas: "heading search nav theme-toggle";
   padding: 0.75rem;
@@ -29,13 +29,7 @@ header {
 }
 
 .logo__text {
-  display: none;
-}
-
-@media (--md) {
-  .logo__text {
-    display: block;
-  }
+  display: block;
 }
 
 /*! purgecss start ignore */
@@ -52,6 +46,8 @@ header {
   background: var(--bg2);
   caret-color: var(--fg);
   color: var(--fg);
+  font: inherit;
+  min-height: 2.25rem;
   outline: none;
   padding: 0 0.5rem;
   visibility: hidden; /* Hide until flexsearch index is initialized */
@@ -226,12 +222,18 @@ nav#menu {
     margin: 0;
     max-width: calc(100vw - 1rem);
     min-width: 8rem;
+    opacity: 0;
     padding: 0.75rem 1rem;
+    pointer-events: none;
     position: absolute;
     right: 0;
     top: calc(100% + 0.5rem);
     transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.9, 0, 0.1, 1);
+    transition:
+      opacity 0.2s ease-in-out,
+      transform 0.5s cubic-bezier(0.9, 0, 0.1, 1),
+      visibility 0.2s ease-in-out;
+    visibility: hidden;
     z-index: 10;
 
     & .menu__item {
@@ -247,9 +249,9 @@ nav#menu {
 
   & .menu__burger {
     display: flex;
-    height: 24px;
+    height: 28px;
     position: relative;
-    width: 24px;
+    width: 28px;
 
     & > * {
       position: absolute;
@@ -287,7 +289,10 @@ nav#menu {
 
       &:checked {
         & ~ ul.menu--vertical {
+          opacity: 1;
+          pointer-events: auto;
           transform: none;
+          visibility: visible;
         }
 
         & ~ svg {
