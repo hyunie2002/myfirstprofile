@@ -62,7 +62,7 @@
 
 .blog-post .post-section-accordion:not([open]) > summary:hover::before {
   color: var(--primary);
-  transform: translateX(0.2rem) scale(1.15);
+  transform: translateX(0.2rem) scale(1.15) rotate(90deg);
 }
 
 .post-section-accordion__heading {
