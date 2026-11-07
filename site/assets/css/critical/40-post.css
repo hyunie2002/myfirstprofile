@@ -45,11 +45,24 @@
   color: var(--primary-alt);
   content: "> ";
   display: inline-block;
-  transition: transform 0.2s ease-in-out;
+  transform-origin: center;
+  transition:
+    color 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
 }
 
 .post-section-accordion[open] > summary::before {
   transform: rotate(90deg);
+}
+
+.blog-post .post-section-accordion[open] > summary:hover::before {
+  color: var(--primary);
+  transform: translateX(0.2rem) scale(1.15) rotate(0deg);
+}
+
+.blog-post .post-section-accordion:not([open]) > summary:hover::before {
+  color: var(--primary);
+  transform: translateX(0.2rem) scale(1.15);
 }
 
 .post-section-accordion__heading {
